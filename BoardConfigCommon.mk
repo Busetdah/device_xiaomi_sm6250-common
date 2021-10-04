@@ -13,7 +13,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
+TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
@@ -226,3 +226,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
+
+# MiuiCamera
+-include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
+
